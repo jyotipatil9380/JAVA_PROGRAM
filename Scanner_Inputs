@@ -1,0 +1,25 @@
+package Java_Programs;
+
+import java.util.Scanner;
+
+public class String_InputsUsing_Scanner {
+	public static void main(String args[])
+	{
+		Scanner sc =new Scanner(System.in);
+		System.out.print("Enter a word: ");
+		String s=sc.nextLine();
+		System.out.println("Entered String str1: " + s);
+
+		
+		
+		System.out.print("Enter a number ");
+		float st=sc.nextFloat();
+		System.out.println("Entered String str1: " + st);
+		
+		System.out.print("Enter a number ");
+		Double ste=sc.nextDouble();
+		System.out.println("Entered String str1: " + ste);
+
+	}
+
+}
