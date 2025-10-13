@@ -1,3 +1,4 @@
+//Time complexity ==>O(logn)
 package Java_Programs;
 
 public class Binary_Search {
