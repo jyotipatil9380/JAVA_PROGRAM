@@ -1,0 +1,39 @@
+package Java_Programs;
+
+public class TwoD_Array {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      int a[][]=new int[2][3];
+      a[0][0]=50;
+      a[0][1]=150;
+      a[0][2]=350;
+     
+      a[1][0]=5071;
+      a[1][1]=5071;
+      a[1][2]=5071;
+      
+    
+      //getting the length of rows and colums in matrix:
+      System.out.println("total number of rows:"+a.length);
+      System.out.println("total number of Colums:"+a[0].length);
+      
+      
+     /* for(int r=0;r<2;r++)
+      {
+    	  for(int c=0;c<3;c++) {
+    		  System.out.print(a[r][c]+" ");
+    	  }
+    	  System.out.println();
+      }*/
+      //for-each loop works
+      for(int arr[]:a) {
+    	  for(int x:arr) {
+    		  System.out.println(x);
+    	  }
+    	  System.out.println();
+      }
+      
+	}
+
+}
