@@ -1,0 +1,19 @@
+package Java_Programs;
+import java.util.*;
+public class Even_ODD {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int arr[]= {10,20,22,41,85,74,62,81};
+		for(int i : arr)
+		{
+		if(i %2 == 0) {
+			System.out.println("number is even"+ " "+i);
+		}
+		else {
+			System.out.println("number is odd"+" "+i);
+		}
+	}
+	}
+
+}
