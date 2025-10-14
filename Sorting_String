@@ -1,0 +1,15 @@
+package Java_Programs;
+
+import java.util.Arrays;
+
+public class Sort_Strings {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     char ch[]= {'A','m','S','r'};
+     
+     Arrays.sort(ch);
+     System.out.println(ch);
+	}
+
+}
