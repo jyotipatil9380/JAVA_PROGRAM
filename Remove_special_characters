@@ -1,0 +1,16 @@
+package Java_Programs;
+
+public class Remove_Special_characters {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String s="jyoti @#!%$%^&";
+		
+		String regExp = "[^A-Za-z0-9\\s]";
+
+		System.out.println(s.replaceAll(regExp,""));
+		
+	}
+
+}
