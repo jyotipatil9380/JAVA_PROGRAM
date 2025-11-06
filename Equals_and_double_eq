@@ -1,0 +1,17 @@
+package Java_Programs;
+
+public class Equals_and_double_eq {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s1="welcome";
+		String s2=new String("welcome");
+		//this will compare the two objects
+		System.out.println(s1==s2); // returns false because both are different objects
+		
+		//this will compare the content of objects
+		System.out.println(s1.equals(s2)); //returns true because contents are same 
+
+	}
+
+}
