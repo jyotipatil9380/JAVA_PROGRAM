@@ -1,0 +1,73 @@
+import java.awt.SystemColor;
+import java.util.Arrays;
+
+public class String_Methods {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//lenth()-->total number of characters
+		String s="Welcome";
+		s.length();
+		System.out.println(s.length());
+		System.out.println("welcometothe".length());
+		
+		//concate the string using concate()
+		String s1="jyoti";
+		String s2=" U R very Happy Girl   ";
+		String s3=" U R very Happy Girl jyoti";
+		String s4="Jyo";
+		
+		System.out.println("concate the string :"+s1+s2);
+		System.out.println("concate the string :"+s1.concat(s2).concat(s3));
+		System.out.println("concate the string :"+s1.concat(s2+s3));
+		
+		//trim-->remove the left and right spaces
+		System.out.println("length of string after trim :"+s2.trim().length());
+		System.out.println("length of string s2 :"+s2.length());
+		
+		//charAt(index) -->returns the character from string based index index start from 0
+		System.out.println("Character at 0 index is:"+s1.charAt(0));
+		
+		//contains -->it return true or false s3 is part of s2 or not || check the string is part of main string or not
+		System.out.println(s2.contains(s3));//false
+		System.out.println(s2.contains(s3));//false
+		System.out.println(s1.contains(s4));//false case sentive j or J takes differently 
+		
+	   //equals(), equalsIgnoreCase() -compare string
+		String m1="welcome";
+		String m2="welcome";
+		System.out.println(m1==m2);//true
+		System.out.println(m1.equals("Welcome")); //false
+		System.out.println(m1.equalsIgnoreCase("Welcome"));//true
+		
+		//replace-->replace one or multiple sequence of characters in string
+		String dd="Welcome to the world os the Jyoti...";
+		System.out.println(dd.replace('e', 'X'));
+		
+		//substring=> extract the substring from main string
+		//starting index=>0
+		//ending index=>1
+		String sj="selenium";
+		System.out.println(sj.substring(2,5));//starting index is inclusive and ending index is exclusive
+		
+		System.out.println(sj.replace('e', 'm').replace('n', 'j'));
+		
+		//touppercase and tolowercase
+		System.out.println(sj.toUpperCase());
+		System.out.println(sj.toLowerCase());
+		
+		String m="jyoti@patil";
+		
+		//split() -->split the string into based on delimeters we use 
+		String a[]=m.split("@");
+		System.out.println(a[0]);
+		System.out.println(a[1]);
+		System.out.println(Arrays.toString(a));
+		
+		
+		
+		
+	}
+	
+	}
