@@ -1,0 +1,15 @@
+package Java_Programs;
+
+public class Remove_space {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String s=" W e l c o m  e ";
+		String m=s.trim();
+		System.out.println(s.replaceAll("\\s", ""));
+		System.out.println(s);
+
+	}
+
+}
