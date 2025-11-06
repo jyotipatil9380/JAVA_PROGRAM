@@ -1,0 +1,36 @@
+
+
+package Java_Programs;
+
+public class String_Reverse {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Approach 1
+	String s="YouCanDoIt";
+		String rev=" ";
+		/*	for(int i=s.length()-1;i>=0;i--)
+		{
+			rev=rev+s.charAt(i);
+		}
+System.out.println(rev);
+	}*/
+		
+		
+		//Approach 2-
+		/*char a[]=s.toCharArray();
+		for(int i=s.length()-1;i>=0;i--)
+		{
+			rev=rev+s.charAt(i);
+		}
+System.out.println(rev);*/
+		
+		//Approach 3-string class doesnot have a reverse method in stringbuffer and stringbuilder will be having a reverse method
+		//StringBuffer s1 =new StringBuffer();
+		//s1.reverse();
+		
+		//Approach 4
+		/*StringBuilder s1 =new StringBuilder();
+		s1.reverse();*/
+	}
+}
