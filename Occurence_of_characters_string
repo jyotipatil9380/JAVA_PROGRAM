@@ -1,0 +1,31 @@
+package Java_Programs;
+
+public class Occurence_of_characters_string {
+	
+public	static int occurence(String s1 , int idx,char ch)
+	{
+		if(idx==s1.length())
+		return 0;
+		
+		int count = 0;   
+	        
+
+	        // Check if the current character of the string matches the given character
+	        if (s1.charAt(idx) == ch)
+	            count++;
+
+	        // Recursively count occurrences in the remaining part of the string
+	        count += occurence(s1, idx + 1, ch);
+
+	        return count;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s="mkmkmjmhmnmnmn";
+		char ch='m';
+		System.out.println(occurence(s,0,ch));
+		
+
+	}
+
+}
